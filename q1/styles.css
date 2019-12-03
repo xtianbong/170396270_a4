@@ -1,0 +1,178 @@
+body{
+    font-family: Verdana, Arial, sans-serif;
+}
+img {
+    width:293px;
+    height:293px;
+    margin:10px 0px 0px 0px;
+}
+#pfp{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+}
+h1{
+    font-size:28px;
+}
+
+#overlay{
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.details{
+    width:935px;
+    height:600px;
+    background-color: white;
+    position:absolute;
+    margin: 10% 10% 0% 0%;
+    left: 20%;
+    right: 20%;
+}
+
+.bigpic{
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    top:0px;
+    margin: 0px 0px 0px 0px;
+    height:600px;
+    width:600px;
+}
+
+.post_info{
+    position:absolute;
+    right:0px;
+    width:335px;
+    height:600px;
+}
+
+#pfp_icon{
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+    left:10px;
+    float:left;
+    right:20px;
+    top:10px;
+    margin: 10px 15px 0px 0px;
+}
+
+.info_top{
+    position:absolute;
+    float:right;
+    padding-left:10px;
+    left:0px;
+    top:10px;
+    bottom:10px;
+    align-content: left;
+    height:fit-content;
+    border-bottom:0.25px solid lightgrey;
+    margin-bottom:20px;
+    width:97%;
+    padding: 0px 0px 0px 10px;
+    height:60px;
+}
+.comment{
+    position:relative;
+    float:bottom;
+    left:10px;
+    top:10px;
+    bottom:10px;
+    align-content: left;
+    height:fit-content;
+    margin-bottom:20px;
+    width:100%;
+    padding: 0px 0px 10px 0px;
+    height:fit-content;
+}
+.comment_text{
+    width:200px;
+    float:left;
+    font-size:14px;
+    line-height:7px;
+    text-align:left;
+}
+
+h2{
+    font-size:14px;
+    font-weight:bold;
+}
+
+.info_bottom{
+    position: absolute;
+    bottom:0px;
+    border-top: 0.25px solid lightgrey;
+    height:fit-content;
+    width: 97%;
+    left:0px;
+    padding-left:10px;
+}
+.time{
+    left:0px;
+    margin: 0px 0px 5px 0px;
+    color:grey;
+    font-size:11px;
+}
+
+/*mobile*/
+@media only screen and (max-width:600px){
+    body{
+        background-color:pink;
+    }
+    .details{
+        width:100%;
+        height:600px;
+        position:absolute;
+        height:fit-content;
+        background-color: white;
+    }
+    .bigpic{
+        width:100px;
+        height:100px;
+    }
+    .post_info{
+        position:absolute;
+        right:0px;
+        width:335px;
+        height:600px;
+    }
+}
+
+/*desktop*/
+@media only screen and (min-width:768px){
+    body{
+        width:935px;
+        margin-left:20%;
+        margin-right:33%;
+    }
+    img{
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    
+    .details{
+    width:935px;
+    height:600px;
+    background-color: white;
+    position:absolute;
+    margin: 10% 10% 0% 0%;
+    /*
+    top:10%;
+    left: 20%;
+    bottom: 50%;
+    right: 20%;
+    */
+}
+
+}

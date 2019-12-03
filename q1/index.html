@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <img  id="pfp" src="img/avatar.jpg" alt="profile picture">
+        <h1>dogsofinstagram</h1>
+         
+    </head>
+    <body>
+        
+        <img src="img/1.jpg" onclick="show('img/1.jpg')">
+        <img src="img/2.jpg" onclick="show('img/2.jpg')">
+        <img src="img/3.jpg" onclick="show('img/3.jpg')">
+        <img src="img/4.jpg" onclick="show('img/4.jpg')">
+        <img src="img/5.jpg" onclick="show('img/5.jpg')">
+        <img src="img/6.jpg" onclick="show('img/6.jpg')">
+        <img src="img/7.jpg" onclick="show('img/7.jpg')">
+        <img src="img/8.jpg" onclick="show('img/8.jpg')">
+        <img src="img/9.jpg" onclick="show('img/9.jpg')">
+        <img src="img/10.jpg" onclick="show('img/10.jpg')">
+        <img src="img/11.jpg" onclick="show('img/11.jpg')">
+        <img src="img/12.jpg" onclick="show('img/12.jpg')">
+        <img src="img/13.jpg" onclick="show('img/13.jpg')">
+        <img src="img/14.jpg" onclick="show('img/14.jpg')">
+        <img src="img/15.jpg" onclick="show('img/15.jpg')">
+
+        <div id=overlay onclick="dont_show()">
+            <div class= "details">
+                <img src="" id="over_pic" class="bigpic">
+                <div class="post_info">  
+                    <div class="info_top 
+                    ">
+                        <img id="pfp_icon" src="img/avatar.jpg">
+                        <div class="comment_text">
+                            <h2>dogsofinstagram</h2>
+                            Some place, Some Country
+                        </div>  
+                    </div>
+                    <!--
+                    <div class="comment">
+                        <img id="pfp_icon" src="img/cat_avatar.jpg">
+                        <div class="comment_text">
+                            <b>instacats</b> Great pic wow! Very Epic!
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img id="pfp_icon" src="img/cat_avatar.jpg">
+                        <div class="comment_text">
+                            <b>superhater69</b> bad pic, unsbubed!
+                        </div>
+                    </div>
+                -->
+                    <div class="info_bottom">
+                        <img id= "pfp_icon" src="img/like.png">
+                        <img id= "pfp_icon" src="img/comment.png">
+                        <img id= "pfp_icon" src="img/share.png">
+                        <img id= "pfp_icon" src="img/bookmark.png" style="float:right">
+                        <br>
+                        <br>
+                        <h2>225 likes</h2>
+                        <div class="time" >12 weeks ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+
+
+        <script>
+            function show(imgurl){
+                document.getElementById("overlay").style.display= "block";
+                document.getElementById("over_pic").src = imgurl;
+            }
+            function dont_show(){
+                document.getElementById("overlay").style.display= "none";
+            }
+        </script>
+    </body>
+</html>
